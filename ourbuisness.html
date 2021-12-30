@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OURBUISNESS</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./js/jquery-3.6.0.min.js">
+    <style>
+         @font-face {
+            font-family: 'waltFont';
+            src: url(./sauce/font/WaltDisney.ttf);
+        }
+        @font-face {
+            font-family: 'waltFontUi';
+            src: url(./sauce/font/WaltDisney_UI.ttf);
+        }
+        @font-face {
+            font-family: 'S-CoreDream-6Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'NanumGothicExtraBold';
+            src: url(./sauce/font/NanumGothicExtraBold.ttf);
+        }
+        .lnb{
+            width: 100%;
+            height: 60px;
+            background-color: black;
+            position: fixed;
+            z-index: 99;
+            top: 0;
+            /* float: left; */
+        }
+        .lnb ul{
+            display: block;
+            float: right;
+            justify-content: space-between;
+        }
+        .lnb li{float: left;}
+        .lnb li a{
+            font-family: 'waltFontUi';
+            color: #fff;
+            display: block;
+            padding: 1.3em 3em;
+        }
+        .lnb li a:hover{
+            color: #f5d5b3;
+        }
+        .lnb a img{
+            width: 80px;
+            margin: 0 0 0 4em;
+        }
+        .banner img{ width: 100%;
+            margin-top: 50px;
+        }
+        .title{
+            top: 100%;
+            bottom: inherit;
+            margin-top: -40px;
+            /* position: absolute; */
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+        .title h1{
+            line-height: 1;
+            margin-bottom: 20px;
+            font-size: 85px;
+        }
+        .brand{
+            padding: 100px 0 190px 0;
+            width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+            /* font-size: 0; */
+        }
+        .box{
+            display: inline-block;
+            /* width: 250px; */
+            margin: 0 15px 100px;
+            position: relative;
+            box-shadow: 0 0 5px #d3d3d3;            
+        }
+        .box{
+            cursor: pointer;
+        }
+        .box:hover .wrap{
+            opacity: 1;
+        }
+        .box img{
+            width: 350px;
+            height: 250px;
+            /* z-index: 99; */
+        }
+        .wrap{
+            position: absolute;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 38px 32px;
+            box-sizing: border-box;
+            text-align: right;
+            color: #ffffff;
+            z-index: 1;
+            opacity: 0;
+            transition: all 0.2s ease;
+            text-align: left;
+            animation-duration: 1s;
+            width: 100%;
+            height: 250px;
+
+        }
+        .name{
+            text-align: center;
+            font-family: 'NanumGothicExtraBold';
+            font-weight: bold;
+            font-size: 23px;
+            text-align: left;
+        }
+        .account{
+            font-size: 15px;
+        }
+        /*         
+        .box8, .box9{
+            border: 1px solid #d3d3d3;
+        } */
+
+
+        footer {
+            	position:fixed; width:100%; height:40px; left:0px; bottom:0px; background:#000;	font:12px/3.3 verdana; 	letter-spacing:2px;	opacity:0.4;	z-index:10;}
+        footer ul {	position:absolute; 	bottom:0px; left:50px;}
+        footer ul li {	float:left;	margin-right:40px;}
+        footer ul li a{	color:#fff;}
+        footer span {position:absolute; color:#fff;	right:50px; bottom:0px;}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="lnb">
+            <a href="./disney.html"><img src="./image/icon/disney_logo_white.png" alt=""></a>
+            <ul>
+                <li><a href="./company1.html">COMPANY</a></li>
+                <li><a href="./movie_1.html">MOVIE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="banner">
+                <img src="./image/walt_banner.jpg" alt="">
+            </div>
+            <div class="title">
+                <h1>BRAND</h1>
+                <h2>95년 이상의 시간 동안 오늘날 협력사업을 통해 다양한 컨텐츠를 제공하고 있습니다. </h2>
+            </div>
+            <div class="brand">
+                <div class="box box1">
+                    <div class="wrap">
+                        <div class="name">MARVEL</div>
+                        <div class="account">
+                            Marvel Cinematic Universe <br>(마블 시네마틱 유니버스)<br>앞자를 따서 MCU라고 부른다.
+                            마블 스튜디오에서 제작하는 슈퍼히어로 프랜차이즈 세계관의 캐릭터와 이야기를 바탕으로 세계적인 영화 엔터테인먼트를 제작하고 있다.
+                        </div>
+                    </div>
+                    <img src="./image/brand/marvel/marvel_logo_600.jpg" alt="">
+                </div>
+                <div class="box box2">
+                    <div class="wrap">
+                        <div class="name">PIXAR</div>
+                        <div class="account">
+                            세계적으로 유명한 기술, 크리에이티브 및 제작 능력을 가진 아카데미상 수상 영화 스튜디오이며,
+                            컴퓨터 애니메이션뿐 아니라 최신 3차원 컴퓨터 그래픽스 기술을 개발하고 판매하고 있다.
+                            토이스토리 등 세계적으로 사랑받는 애니메이션 등을 제작하고 있습니다.
+                        </div>
+                    </div>
+                    <img src="./image/brand/pixar/Pixar_Logo.jpg" alt="">
+                </div>
+                <div class="box box3">
+                    <div class="wrap">
+                        <div class="name">20TH CENTURY STUDIOS</div>
+                        <div class="account">
+                            1935년에 설립된 미국의 6대 메이저 영화사중 하나이며 80년의 유산으로 인정받고 있다.
+                            이름이 변경되기 전까지 폭스라고 불렸으며 21세기 스튜디오의 모회사이며
+                            극장 및 스트리밍 개봉 부문에서 모두 아카데미상 수상 경력이 있는 장편 영화 제작업체입니다.
+                        </div>
+                    </div>
+                    <img src="./image/brand/20thcentury_logo_600.jpg" alt="">
+                </div>                               
+                <div class="box box4">
+                    <div class="wrap">
+                        <div class="name">LUCASFILM</div>
+                        <div class="account">
+                            TV, 디지털 엔터테인먼트 제작 분야의 세계적인 선두 기업이다. 
+                            영화 및 TV 제작 외에도 시각 효과 및 오디오 포스트 프로덕션,
+                            최첨단 디지털 애니메이션, 인터랙티브 엔터테인먼트 소프트웨어 등을 
+                            포함한 엔터테인먼트 재산의 글로벌 판매 활동 관리를 포함한다.
+                        </div>
+                    </div>
+                    <img src="./image/brand/Lucasfilm_banner_600.jpg" alt="">
+                </div>
+                <div class="box box5">
+                    <div class="wrap">
+                        <div class="name">SEARCHLIGHT PICTURES</div>
+                        <div class="account">
+                            1994년 폭스 서치라이트 픽처스로 설립된 영화 전문 회사이며 자체 마케팅 및 유통 사업을 하고 있다. 
+                            월트 디즈니 컴퍼니의 자회사로 저예산 및 예술 영화 제작을 맡고 있다.
+                        </div>
+                    </div>
+                    <img src="./image/brand/searchlight_pictures_600.jpg" alt="">
+                </div>
+                <div class="box box6">
+                    <div class="wrap">
+                        <div class="name">NATIONAL GEOGRAPHIC</div>
+                        <div class="account">
+                            극장 및 스트리밍 개봉 부문에서 모두 아카데미상 수상 경력이 있는 장편 영화 제작업체입니다.
+                            이전 20세기 폭스로 알려졌던 20세기 스튜디오는 믿을 수 없는 80년의 유산으로 인정받고 있다.
+                        </div>
+                    </div>
+                    <img src="./image/brand/nationalgeographic_logo_600.jpg" alt="">
+                </div>
+                <div class="box box7">
+                    <div class="wrap">
+                        <div class="name">STAWWARS</div>
+                        <div class="account">
+                            1977년부터 제작된 조지 루카스 감독의 미국 공상과학영화 시리즈.
+                            대중문화 사상 최고의 성공을 거둔 매체 중 하나로 전 세계적인 유명세를 자랑하며, 
+                            특히 미국에서는 단순한 영화 차원을 넘어 넘어 건국신화에 비교되는 상징성을 갖춘 초대형 프랜차이즈다.
+                        </div>
+                    </div>
+                    <img src="./image/brand/starwars/starwars_logo_light.jpg" alt="">
+                </div>
+                <div class="box box8">
+                    <div class="wrap">
+                        <div class="name">ABC</div>
+                        <div class="account">
+                            미국의 3대 네트워크 중 하나로서, 10개의 텔레비전 방송국과 21개의 라디오 방송, 
+                            그리고 케이블 스포츠 채널인 ESPN 등 운영하는 방송사이다.
+                            뉴스로 명성이 높으며, 뉴스제작본부하에 11개 국내지국과 17개 해외지국이 있다. 
+                        </div>
+                    </div>
+                   <img src="./image/brand/abc_logo.jpg" alt="">
+                </div>
+                <div class="box box9">
+                    <div class="wrap">
+                        <div class="name">ESPN</div>
+                        <div class="account">
+                            Entertainment and Sports Programming Network 
+                            (엔터테인먼트 앤 스포츠 프로그래밍 네트워크)의 약자로, 
+                            미국의 스포츠 전문 케이블 텔레비전 네트워크이다. 
+                            스포츠 방송과 이에 관련된 프로그램을 만들어 24시간 방송하는 방송국이다. 
+                        </div>
+                    </div>
+                   <img src="./image/brand/espn_logo_600.jpg" alt="">
+                </div>
+                
+                
+            </div>
+        </div>
+
+    </section>
+    <!-- section -->
+    <footer>
+        <ul>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">event</a></li>
+        </ul>
+        <span>copyright 2015 Disney All right reserved.</span>
+    </footer>
+    <!-- footer -->
+</body>
+</html>

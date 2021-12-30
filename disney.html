@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>disney</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <style>
+        @font-face {
+        font-family: 'New Walt Disney UI Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('New Walt Disney UI Regular'), url('New Walt Disney UI.woff') format('woff');
+        }
+
+        @font-face {
+        font-family: 'New Walt Disney Font Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('New Walt Disney Font Regular'), url('New Walt Disney.woff') format('woff');
+        }
+        @font-face {
+            font-family: 'waltFont';
+            src: url(./sauce/font/WaltDisney.ttf);
+        }
+        @font-face {
+            font-family: 'waltFontUi';
+            src: url(./sauce/font/WaltDisney_UI.ttf);
+        }
+        
+        .wrap{
+            position: fixed; width: 100%; height: 100%;
+            /* background: url(./image/mp4/disney_studio_intro.mp4) no-repeat center bottom; background-size: cover; */
+        }
+
+        .logo img{position: fixed; width: 300px; top: 600px; 
+           left: 2em; text-align: center; line-height: 0;
+        }
+        
+        .menu{
+            width: 300px; height: 100%; background-color: #05135a;
+            position: relative;	float:right;
+        }
+        .menu ul{margin-top: 300px;}
+        .menu li a{
+            color: #fff; font-family: 'New Walt Disney UI Regular', 'waltFontUi';
+            font-size: 30px; text-align: center;
+            display: block;
+            line-height: 3.5em;
+        }     
+        
+        .sns{margin: 0 0 0 80px;}
+        .sns img{
+            width: 30px;
+            /* padding-left: 1em; */
+            margin: 20px 0 0 10px;
+        }
+
+        /* section{width: calc(100% - 300px); height: 100vh;  } */
+        section{width: 1920px; height: 100vh; position: relative; z-index: -1; }
+        figure{width: 100%; height: 100vh;}
+        figure video{width: 100%;}
+        
+        footer {
+            	position:fixed; width:100%; height:40px; left:0px; bottom:0px; background:#000;	font:12px/3.3 verdana; 	letter-spacing:2px;	opacity:0.4;	z-index:10;}
+        footer ul {	position:absolute; 	bottom:0px; left:50px;}
+        footer ul li {	float:left;	margin-right:40px;}
+        footer ul li a{	color:#fff;}
+        footer span {position:absolute; color:#fff;	right:50px; bottom:0px;}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <div class="logo">
+                 <img src="./image/icon/disney_logo_white.png" />
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="./company1.html">COMPANY</a></li>
+                    <li><a href="./ourbuisness.html">OUR BUSSINESSES</a></li>
+                    <li><a href="./movie_1.html">MOVIE</a></li>
+                </ul>
+                <div class="sns">
+                    <a href="https://www.disneyplus.com/ko-kr">
+                        <img src="./image/icon/disney-plus.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/DisneyKorea">
+                        <img src="./image/icon/facebook.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/disneykorea/">
+                        <img src="./image/icon/instagram_c.png" alt="">
+                    </a>
+                </div>
+                <!-- sns end -->
+          </div>
+          <!-- div.menu -->
+    </div>
+    </header>
+    <!-- header -->
+    <section>
+        <figure>
+            <video autoplay muted poster="./image/Disney_Intro_HD_1080p.jpg">
+                <source  src="./sauce/mp4/Walt Disney Pictures_2020.mp4">
+            </video>
+        </figure>       
+    </section>
+    <!-- section -->
+    <footer>
+        <ul>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">event</a></li>
+        </ul>
+        <span>copyright 2015 Disney All right reserved.</span>
+    </footer>
+    <!-- footer -->
+</body>
+</html>

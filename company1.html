@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <style>
+        @font-face {
+            font-family: 'waltFont';
+            src: url(./sauce/font/WaltDisney.ttf);
+        }
+        @font-face {
+            font-family: 'waltFontUi';
+            src: url(./sauce/font/WaltDisney_UI.ttf);
+        }
+        @font-face {
+            font-family: 'NanumGothicExtraBold';
+            src: url(./sauce/font/NanumGothicExtraBold.ttf);
+        }
+        @font-face {
+            font-family: 'KOTRA';
+            src: url(./sauce/font/KOTRA_BOLD.ttf);
+        }
+        body{
+            overflow-y: hidden;
+        }
+        .wrap{
+            position: fixed; width: 100%; height: 100%;
+            /* background: url(./image/mp4/disney_studio_intro.mp4) no-repeat center bottom; background-size: cover; */
+        }
+        .lnb{
+            width: 100%;
+            height: 60px;
+            background-color: black;
+            position: fixed;
+            z-index: 99;
+            top: 0;
+            /* float: left; */
+        }
+        .lnb ul{
+            display: block;
+            float: right;
+            justify-content: space-between;
+        }
+        .lnb li{float: left;}
+        .lnb li a{
+            font-family: 'waltFontUi';
+            color: #fff;
+            display: block;
+            padding: 1.3em 3em;
+        }
+        .lnb li a:hover{
+            color: #f5d5b3;
+        }
+        .lnb a img{
+            width: 80px;
+            margin: 0 0 0 4em;
+        }
+        
+        .company{
+            width: 100%; 
+            height: 100%; 
+            position: relative;	float:right;
+        }
+        .text{width: 100%; height: 100%; position: absolute;
+            background-color: #fde196; opacity: 70%;
+        }
+        .textIn{
+            font-family:  'NanumGothicExtraBold';
+            margin-top: 7em;
+            /* line-height: calc(100%/2); */
+            font-size: 30px;
+            
+        }
+        .text h1{
+            margin: 1.2em 1em 0;
+            font-size: 1.5em;
+            text-align: center; 
+            font-family: 'KOTRA';
+        }
+        .text p{
+            font-size: 12pt; text-align: center; 
+            line-height: 2em; margin: 1em;
+        }
+
+        /* section{width: calc(100% - 300px); height: 100vh;  } */
+        section{
+            width: 1920px; 
+            height: 100vh;  position: relative; z-index: -1;  
+            margin: auto;
+            opacity: 70%;
+         }
+        figure{width: 100%; height: 100vh;}
+        /* figure video{width: 100%; } */
+        
+        footer {
+            	position:fixed; width:100%; height:40px; left:0px; bottom:0px; background:#000;	font:12px/3.3 verdana; 	letter-spacing:2px;	opacity:0.4;	z-index:10;}
+        footer ul {	position:absolute; 	bottom:0px; left:50px;}
+        footer ul li {	float:left;	margin-right:40px;}
+        footer ul li a{	color:#fff;}
+        footer span {position:absolute; color:#fff;	right:50px; bottom:0px;}
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <nav class="lnb">
+                <a href="./disney.html"><img src="./image/icon/disney_logo_white.png" alt=""></a>
+                <ul>
+                    <li><a href="./ourbuisness.html">OUR BUSSINESSES</a></li>
+                    <li><a href="./movie_1.html">MOVIE</a></li>
+                </ul>
+            </nav>
+            <div class="company">
+               <div class="text">
+                    <div class="textIn">
+                        <h1>디즈니 스튜디오는 역사상 가장 오래된 <br> 애니메이션 스튜디오입니다.</h1>
+                        <p>
+                            디즈니 컴퍼니는 1923년 10월 16일 월트와 로이 오 형제에 의해 처음 설립되었으며 <br>
+                            미국의 다국적 엔터테인먼트로 성장해 <br> 캘리포니아주 버뱅크에 본사를 두고 있습니다. <br>
+                            1980년대 이후 미국 애니메이션 업계의 리더로 발전했습니다.<br>
+                            월트디즈니픽처스, 픽사, 마블스튜디오, 루커스필름,<br>  20세기스튜디오 등의 회사를 인수했습니다. <br>
+                            디즈니의 주요 사업부는 TV부문이며, <br> 방송, 스트리밍 미디어, 테마파크 리조트, <br>
+                            소비자용 제품, 출판, 국제적인 운영 등 <br> 다양한 사업을 진행하고 있습니다. <br>
+                            디즈니의 대표적인 사랑스러운 만화 캐릭터 <br> 미키마우스는 1928년에 만들어졌습니다.
+                        </p>
+                    </div>
+                </div>
+          </div>
+          <!-- div.company -->
+    </div>
+    </header>
+    <!-- header -->
+    <section>
+        <figure>
+            <video autoplay muted poster="./image/walt_1080.jpg" loop> 
+                <source  src="./sauce/mp4/mickymouse_intro.mp4">
+            </video>
+        </figure>       
+    </section>
+    <!-- section -->
+    <footer>
+        <ul>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">event</a></li>
+        </ul>
+        <span>copyright 2015 Disney All right reserved.</span>
+    </footer>
+    <!-- footer -->
+</body>
+</html>

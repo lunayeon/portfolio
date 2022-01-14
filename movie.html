@@ -65,6 +65,9 @@
             display: block;
             padding: 1.3em 3em;
         }
+        .lnb li a:hover {
+            color: #f5d5b3;
+        }
         .lnb a img{
             width: 80px;
             margin: 0.3em 0 0 4em;
@@ -81,24 +84,16 @@
             background-size: cover;
             opacity: 1;
         }
-        .movie_sec{ position: relative; width: calc(100%/4); height: 100%;
-            border-right: 1px solid rgba(255, 255, 255, 0.15);
-            background: url(./image/divider.png) no-repeat left center ;
+        .movie_sec{ 
+            position: relative; 
+            width: calc(100%/4); height: 100%;
+            /* border-right: 1px solid rgba(255, 255, 255, 0.15); */
            
         }
         .movie_sec a{
             display: block;
-            width: 100%;
-        /* }
-        .movie_sec div{
-           
-            width: 100%;
-            height: 100%;
-            background: url(./image/divider.png) no-repeat left center;
-            /* float: right; */
-            /* overflow: hidden; */
-            z-index: 9999;
-        } */
+            width: 100%; 
+        }
         .title{
             font-family: 'S-CoreDream-6Bold';
             margin-top: 43px; font-size: 2em;
@@ -106,36 +101,31 @@
             color: #fff;
         }
                 
-        .bg1{background-image: url(./image/movie/1105_ETERNALS/eternals_mega_01.jpg); 
-            opacity: 0; background-size: inherit; background-position-x: center;} 
-        .bg1:hover{opacity: 1;}
+        .bg{
+             position: absolute;
+             z-index: 999;
+        } 
+        .backImg img{
+            position: absolute;
+            width: 100%; 
+            height: 100%;
+            filter: grayscale(100%);
+            transition: 1s;
+        }            
+        .backImg img:hover{filter: none;}
 
-        .bg2{background-image: url(./image/movie/1124_ENCANTO/encanto_mega.jpg); 
-            opacity: 0; background-size: inherit; background-position-x: center;} 
+        /* .bg2{background-image: url(./image/movie/1124_ENCANTO/encanto_mega.jpg); 
+            background-size: inherit; background-position-x: center;} 
         .bg2:hover{opacity: 1;}
 
         .bg3{background-image: url(./image/movie/1217_Spiderman_nowayhome/spider_mega_01.jpg); 
-            opacity: 0; background-size: inherit; background-position-x: center;} 
+             background-size: inherit; background-position-x: center;} 
         .bg3:hover{opacity: 1;}
 
         .bg4{background-image: url(./image/movie/1222_The_Kings_Man/kings_mega_01.jpg); 
-            opacity: 0; background-size: inherit; background-position-x: center;} 
-        .bg4:hover{opacity: 1;}
-/* 
-        .text{
-            margin: 10em 0em;
-            position: relative;
-            overflow: hidden;
-            opacity: 0; 
-            left: 0; width: 100%; background-color: #fff;
-            text-align: center;
-        }
-        .text h1{
-            font-size: 1.5em;
-            text-align: center;
-            margin: 5em 0 1em;
-            font-family: 'Nanum Gothic', sans-serif;
-        } */
+            background-size: inherit; background-position-x: center;} 
+        .bg4:hover{opacity: 1;} */
+
         .movie_sec p {
             font-size: 15px;
             color: #fff;
@@ -153,43 +143,56 @@
 </head>
 <body>
     <nav class="lnb">
-        <a href="./index.html"><img src="./image/icon/disney_logo_white.png" alt=""></a>
+        <a href="./disney.html"><img src="./image/icon/disney_logo_white.png" alt=""></a>
         <ul>
             <li><a href="./ourbuisness.html">COMPANY</a></li>
             <li><a href="./ourbuisness.html">OUR BUSSINESSES</a></li>
         </ul>
     </nav>
     <div class="slide">
-        <div class="movie_sec bg1">
+        <div class="movie_sec">
             <a href="./eternals_1.html">
+            <div class="bg">
                 <h2 class="title">ETERNALS</h2>
                 <p>When you love something, you fight for it</p>
-            </a>
-            <div></div>
-            
+            </div>
+            <div class="backImg">
+                <img src="./image/movie/1105_ETERNALS/eternals_mega_01.jpg" alt="">
+            </div>
+        </a>
         </div>
-        <div class="movie_sec bg2">
+        <div class="movie_sec">
             <a href="#">
+            <div class="bg">
                 <h2 class="title">ENCANTO</h2>
                 <p>Magical house. Magical family.</p>
-            </a>
-            <div></div>
-            
+            </div>
+            <div class="backImg">
+                <img src="./image/movie/1124_ENCANTO/encanto_mega.jpg" alt="">
+            </div>
+        </a>
         </div>
-        <div class="movie_sec bg3">
+        <div class="movie_sec">
             <a href="#">
+            <div class="bg">
                 <h2 class="title">SPIDER-MAN:No Way Home</h2>
                 <p>You have to make a wish carefully, Peter.</p>
-            </a>
-            <div></div>
-            
+            </div>
+            <div class="backImg">
+                <img src="./image/movie/1217_Spiderman_nowayhome/spider_mega_01.jpg" alt="">
+            </div>
+        </a>
         </div>
-        <div class="movie_sec bg4">
+        <div class="movie_sec">
             <a href="#">
+            <div class="bg">
                 <h2 class="title">THE KING'S MAN</h2>
-                <p>Magical house. Magical family.</p>
-            </a>
-            <div></div>            
+                <p>Witness the birth of Kingsman hidden in the veil!</p>
+            </div>
+            <div class="backImg">
+                <img src="./image/movie/1222_The_Kings_Man/kings_mega_01.jpg" alt="">
+            </div>
+        </a>
         </div>
     </div>
     <!-- section -->
